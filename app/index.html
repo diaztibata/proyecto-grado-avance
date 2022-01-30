@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Inventarios Vargos</title>
+  <link rel="stylesheet" href="ui/app.css">
+</head>
+
+<body>
+  <h1>Inventario Vargos</h1>
+
+  <div class="inventarios">
+    <form id="taskForm" class="card">
+      <input type="text" id="taskNombre" placeholder="Nombre-Producto" autofocus>
+      <input type="text" id="taskCodigo" placeholder="Codigo" autofocus>
+      <input type="text" id="taskCategoria" placeholder="Categoria" autofocus>
+      <input type="text" id="taskCantidad" placeholder="Cantidad" autofocus>
+      <input type="text" id="taskPreciocompra" placeholder="$: Precio-Compra" autofocus>
+      <input type="text" id="taskPrecioventa" placeholder="$: Precio-venta" autofocus>
+      <input type="text" id="taskIva" placeholder="$: Iva" autofocus>
+      <input type="text" id="taskProveedor" placeholder="Proveedor" autofocus>
+    
+
+      <button type="submit" class="btn btn-secondary">
+        Save
+      </button>
+    </form>
+  
+    <!-- Task List -->
+    <table>
+      <thead>  
+        <tr>
+          <td>Id</td>
+          <td>Codigo</td>
+          <td>Nombre</td>
+          <td>Categoria</td>
+          <td>Cantidad</td>
+          <td>Precio Compra</td>
+          <td>Precio Venta</td>
+          <td>Iva</td>
+          <td>Proveedor</td>
+          <td>Borrar</td>
+          <td>Editar</td>
+        </tr>
+        
+      </thead>
+      <tbody id="taskList">
+  
+      </tbody>
+    </table>
+  </div>
+  <div class="usuario">
+    <form id="usuarioForm" class="card">
+      <input type="text" id="usuarioName" placeholder="Ingrese Correo" autofocus>
+      <input type= "text"id="usuarioDescription" placeholder="Ingrese Usuario" autofocus></input>
+      <input type= "password"id="usuarioCorreo" placeholder="Ingrese Contraseña" autofocus></input>
+      <input type= "text"id="usuarioCargo" placeholder="Ingrese Cargo" autofocus></input>
+      <button type="submit" class="btn btn-secondary">
+        Save
+      </button>
+    </form>
+
+    <!-- Task List -->
+    <table>
+      <thead>  
+        <tr>
+          <td>Id</td>
+          <td>Correo</td>
+          <td>Usuario</td>
+          <td>Contraseña</td>
+          <td>Cargo</td>
+          <td>Borrar</td>
+          <td>Editar</td>
+        </tr>
+        
+      </thead>
+      <tbody id="usuarioList">
+  
+      </tbody>
+    </table>
+    
+  
+    <!-- Usuario List -->
+    <ul id="usuarioList"></ul>
+  </div>
+  <div class="proveedores">
+    <form id="proveedorForm" class="card">
+      <input type="text" id="proveedorCodigo" placeholder="Codigo" autofocus>
+      <input type="text" id="proveedorName" placeholder="Nombre Empresa" autofocus>
+      <input type="text" id="proveedorContacto" placeholder="Nombre Contacto" autofocus>
+      <input type="text" id="proveedorTelefono" placeholder="Telefono Proveedor" autofocus>
+      <input type="text" id="proveedorDireccion" placeholder="Dirección Proveedor" autofocus>
+      <input type="text" id="proveedorProductos" placeholder="Productos Proveedor" autofocus>
+  
+      <button type="submit" class="btn btn-secondary">
+        Save
+      </button>
+    </form>
+
+    <!-- Task List -->
+    <table>
+      <thead>  
+        <tr>
+          <td>Id</td>
+          <td>Codigo</td>
+          <td>Nombre</td>
+          <td>Direccion</td>
+          <td>Telefono</td>
+          <td>Contacto</td>
+          <td>Productos</td>
+          <td>Borrar</td>
+          <td>Editar</td>
+        </tr>
+      </thead>
+      <tbody id="proveedorList">
+  
+      </tbody>
+    </table>
+  
+    <!-- Proveedor List -->
+    <ul id="proveedorList"></ul>
+  </div>
+
+
+  <script src="ui/app.js"></script>
+</body>
+
+</html>
